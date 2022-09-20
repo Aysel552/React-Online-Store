@@ -1,0 +1,149 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #cfd8dc;
+    padding: 15px;
+}
+
+.mainHeading{
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+}
+.change{
+    padding: 10px 40px;
+    margin: 20px 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
+.change:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.product-info{
+    display: flex;
+    justify-content: center;
+}
+
+h3,h4{
+    margin: 0 auto;
+}
+
+.productName, .productPrice{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.productPrice{
+    margin-left: 90px;
+}
+
+
+
+/* About Component */
+
+.slider{
+    width: 120%;
+    border-radius: 10px;
+    
+}
+
+.slideshowContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.previousButton{
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: auto;
+    padding: 10px;
+    margin-bottom: -110px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nextButton{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: auto;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.previousButton:hover, .nextButton:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+/* Contact Form design */
+
+.main{
+    background-image: url('https://images.unsplash.com/photo-1537274942065-eda9d00a6293?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.heading{
+    color: red;
+    margin-top: 300px;
+    font-size: 52px;
+    margin-left: 90px;
+}
+
+label{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
