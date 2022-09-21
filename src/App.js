@@ -5,10 +5,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { useState } from "react";
-import { data } from "./data";
-import Products from "./Products";
-import Buttons from "./Buttons";
+// import { useState } from "react";
+// import { data } from "./data";
+// import Products from "./Products";
+// import Buttons from "./Buttons";
 import Home from "./Home";
 import About from "./About";
 import ContactForm from "./ContactForm";
@@ -30,7 +30,6 @@ function App() {
     </Routes>
     </Router>
   )
-  
 }
 
 export default App;

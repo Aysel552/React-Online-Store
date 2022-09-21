@@ -9,14 +9,12 @@ function About() {
     const previousSlide = () =>{
         setImages((image =>{
             image--;
-
             if(image < 0){
                 return slides.length - 1
             }
             return image
         }))
     }
-
     const nextSlide = () => {
         setImages((image =>{
             image++;
@@ -28,30 +26,21 @@ function About() {
     }
     return(
         <div className="slideshowContainer">
-
             <div className="container">
                 <h1>HISTORY OF THE BRAND</h1>
             </div>
-
             <div className="container">
                 <p>{showMore ? description : description.substring(0,170) + "...."}
                 <button onClick={() => setShowMore(!showMore)}>{showMore ? 'Show Less' : 'Show More'}</button></p>
             </div>
-
             <div className="container">
         <img className="slider" src={image} alt='Clothes' width='500px'/>
             </div>
-
             <div>
                 <button className="previousButton" onClick={previousSlide}>❮</button>
                 <button className="nextButton" onClick={nextSlide}>❯</button>
             </div>
-
-
-
-
         </div>
     )
 }
-
 export default About;
