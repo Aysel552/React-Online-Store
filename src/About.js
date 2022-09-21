@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { slides } from "./slides";
 import "./App.css";
-
 function About() {
-    const [images,setImages] = useState(0);
-    const {description,image} = slides [images];
-    const [showMore,setShowMore] = useState(false);
+    const[images,setImages] = useState(0);
+    const{description,image}= slides[images];
+    const[showMore,setShowMore]= useState(false);
     const previousSlide = () =>{
         setImages((image =>{
             image--;
